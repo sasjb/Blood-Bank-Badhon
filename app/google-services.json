@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "800869103708",
+    "project_id": "badhonapp-e5cc8",
+    "storage_bucket": "badhonapp-e5cc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800869103708:android:46e390b150f9c10476ce99",
+        "android_client_info": {
+          "package_name": "com.example.jubloodbank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVqjc5y_DUZRRnwmZxXZ7RKkIP9CaxFjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/home"
+    tools:context=".SplashScreen.SplashScrennActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="40dp"
+            android:contentDescription="Logo Image"/>
+
+        <TextView
+            android:id="@+id/organizationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;Badhan&quot;\n  A Voluntary Blood Donors Organization"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/logoImage"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="একের রক্ত অন্যের জীবন \n রক্তই হোক আত্মার বাঁধন"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="200dp"
+            app:layout_constraintTop_toBottomOf="@id/organizationText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/progress_drawable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.86" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

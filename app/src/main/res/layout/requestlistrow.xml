@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+
+                android:id="@+id/profileImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top"
+                android:layout_marginEnd="10dp"
+
+                android:background="@drawable/circular_profile_pic"
+                android:clipToOutline="true"
+                android:src="@drawable/img_1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/patientName"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="#F8DF7A59"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Patient Name: Ahsan Habib" />
+        </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+android:weightSum="3"
+         >
+         <ImageView
+android:layout_weight="1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/baseline_call_24"
+             android:layout_margin="2dp"
+
+             />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="2"
+
+            android:id="@+id/phonenumberR"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:autoLink="phone"
+
+
+
+            tools:text=": 01613162522" />
+         <ImageView
+             android:layout_weight="1"
+
+             android:id="@+id/delete"
+             android:layout_gravity="right"
+             android:layout_width="40dp"
+             android:layout_height="30dp"
+             android:src="@drawable/baseline_delete_24"
+
+             />
+     </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/BloodRequired"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            tools:text="Blood Required:2bag" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            tools:text="Address:" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB0F62"
+            tools:text="Date &amp; time: 7oct|2pm" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bloodtypereq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Needed:A+" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>
