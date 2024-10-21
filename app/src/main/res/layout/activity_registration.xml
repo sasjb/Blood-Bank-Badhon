@@ -87,7 +87,9 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_email_24"
             android:layout_margin="5dp"
+
             android:hint="Email"
 
 
