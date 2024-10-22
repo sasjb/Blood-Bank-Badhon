@@ -91,8 +91,8 @@ class HomePageActivity : AppCompatActivity() {
             startActivity(Intent(this,BloodRequestActivity::class.java))
         }
 
-        imageslist.add(R.drawable.ddonateblood)
-        imageslist.add(R.drawable.img_3)
+        imageslist.add(R.drawable.bloodtree)
+        imageslist.add(R.drawable.card2)
         imageslist.add(R.drawable.donate_blood)
         imageslist.add(R.drawable.blood_donor_day)
 

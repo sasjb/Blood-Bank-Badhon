@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="600dp"
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
@@ -11,34 +11,31 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="600dp">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/background2"/>
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/login"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="550dp"
             android:layout_gravity="center"
-            android:layout_margin="20dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="10dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="10dp"            app:cardElevation="10dp"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="454dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="80px"
+
                 android:gravity="center"
                 android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:src="@drawable/julogo"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/filledTextField"
@@ -53,7 +50,9 @@
                         android:id="@+id/edLogEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress"/>
+                        android:layout_marginBottom="6dp"
+                        android:drawableStart="@drawable/baseline_email_24"
+                        android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -69,7 +68,10 @@
                         android:id="@+id/edLogPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword"/>
+                        android:layout_marginBottom="6dp"
+                        android:drawableStart="@drawable/baseline_lock_24"
+
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
@@ -82,21 +84,27 @@
                     android:clickable="true"
                     android:elevation="200dp"
                     android:gravity="center"
-                    android:text="Login"/>
+                    android:text="Login" />
 
                 <Button
                     android:id="@+id/btnCreat"
                     style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#AAA5A5"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#006400"
                     android:clickable="true"
                     android:elevation="10dp"
                     android:gravity="center"
                     android:text="Create an account"
-                    android:textColor="@color/black"
-                    android:layout_marginBottom="10dp"/>
+                    android:textColor="@color/black" />
             </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/julogo" />
 
         </androidx.cardview.widget.CardView>
 
